@@ -1,0 +1,8 @@
+{
+  "name": "Print week",
+  "description": "Print the whole week as A4 pages, or save it as a PDF, like the example plan.",
+  "version": "1.0.0",
+  "main": "PrintWeek.js",
+  "styles": ["print.css"],
+  "uses": ["week", "household"]
+}

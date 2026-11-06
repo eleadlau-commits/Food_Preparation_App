@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1e3a2f"/>
+  <!-- a rice bowl with steam, in one line: Mise -->
+  <g fill="none" stroke="#f4eee3" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 262h276c0 78-62 132-138 132S118 340 118 262z"/>
+    <path d="M206 394l-10 34h120l-10-34"/>
+    <path d="M206 214c-18-22 18-36 0-62M256 214c-18-22 18-36 0-62M306 214c-18-22 18-36 0-62"/>
+  </g>
+  <circle cx="352" cy="300" r="20" fill="#e98a5f"/>
+</svg>

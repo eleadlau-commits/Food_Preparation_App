@@ -1,0 +1,9 @@
+{
+  "name": "Week menu",
+  "description": "The Week tab: this week's dinners, swapping and locking dishes, planning a new week, and how the ingredients are shared.",
+  "version": "1.0.0",
+  "main": "Menu.js",
+  "styles": ["menu.css"],
+  "requires": ["week", "recipes"],
+  "uses": ["household"]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Lunches",
+  "description": "The lunch plan: each dinner packed for the next day, on the Cook tab and Today.",
+  "version": "1.0.0",
+  "main": "Lunches.js",
+  "styles": ["lunches.css"],
+  "requires": ["week"],
+  "uses": ["cook"]
+}

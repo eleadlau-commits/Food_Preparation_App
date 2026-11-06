@@ -1,0 +1,8 @@
+{
+  "name": "Cook",
+  "description": "The Cook tab: each night's quick methods, rice, and food-safety notes; tonight's dinner on Today.",
+  "version": "1.0.0",
+  "main": "Cook.js",
+  "styles": ["cook.css"],
+  "requires": ["week"]
+}

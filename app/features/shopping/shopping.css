@@ -1,0 +1,14 @@
+.shop-view { display: grid; gap: 14px; padding-bottom: 24px; }
+.shop-view > .hint { margin: 0; }
+.shop-list h2 { margin: 0 0 4px; font-size: 21px; }
+.shop-list h2 small { font-family: var(--font); font-size: 14px; color: var(--muted); font-weight: 400; }
+.shop-list .sub-head { margin: 16px 0 4px; color: var(--pine); font-size: 13px; text-transform: uppercase; letter-spacing: .05em; }
+.shop-items { list-style: none; margin: 0; padding: 0; }
+.shop-items li { border-bottom: 1px solid var(--line); }
+.shop-items li:last-child { border-bottom: 0; }
+.shop-item { display: grid; grid-template-columns: 26px 1fr auto; gap: 10px; align-items: start; padding: 10px 0; cursor: pointer; }
+.shop-item input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--accent); }
+.shop-name { display: grid; line-height: 1.3; }
+.shop-name small { color: var(--muted); font-size: 13px; }
+.shop-amount { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; white-space: nowrap; }
+.shop-items li.done .shop-name, .shop-items li.done .shop-amount { text-decoration: line-through; color: var(--muted); }

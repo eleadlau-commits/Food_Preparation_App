@@ -1,0 +1,4 @@
+# Made by the compiler (python build.py); never edit or upload these.
+dist/
+node_modules/
+__pycache__/

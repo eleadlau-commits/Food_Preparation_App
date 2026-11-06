@@ -1,0 +1,8 @@
+{
+  "name": "Feedback",
+  "description": "Liked it, Okay or Skipped after each dinner; the planner learns what you like.",
+  "version": "1.0.0",
+  "main": "Tastes.js",
+  "styles": ["tastes.css"],
+  "uses": ["cook", "recipes"]
+}

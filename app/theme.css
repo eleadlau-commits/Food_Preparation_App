@@ -1,0 +1,79 @@
+/* Mise's look: warm paper, deep pine-green ink and a persimmon accent, with a serif for
+   headings, like a well-used kitchen notebook. Components only use these names, never colours
+   of their own. Fonts are the phone's own (no files to download), so it works offline. */
+
+:root {
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --gutter: 16px;
+  --radius: 18px;
+  --shape: 18px;
+  --shape-btn: 999px;   /* pill buttons */
+  --shape-sm: 8px;
+
+  --bg: #f4eee3;          /* paper */
+  --surface: #fffcf6;
+  --surface-2: #efe7d8;
+  --text: #1d2a24;        /* pine ink */
+  --text-2: #33433b;
+  --muted: #5d6a62;
+  --line: #e4dccd;
+  --accent: #c4512a;      /* persimmon */
+  --accent-ink: #ffffff;
+  --accent-soft: #f8e3d8;
+  --pine: #24473a;
+  --pine-soft: #dfe9e2;
+  --western: #f1e6cf;     /* shading for Western nights, as in the printed plan */
+  --western-ink: #6b5222;
+  --fresh: #2f7d55;
+  --frozen: #2f6a92;
+  --frozen-soft: #e1edf5;
+  --topup: #9a6a12;
+  --topup-soft: #f6ebd2;
+  --danger: #b3261e;
+  --danger-soft: #fbe9e7;
+  --shadow: 0 1px 0 rgb(29 42 36 / .04), 0 8px 24px -12px rgb(29 42 36 / .18);
+
+  --top: #1e3a2f;         /* the dark pine band at the top */
+  --top-2: #274a3c;
+  --on-top: #fbf6ec;
+  --on-top-muted: #c9d6cd;
+  --tab-ink: #4d5c54;
+  --glow: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141a17;
+    --surface: #1d2521;
+    --surface-2: #26302b;
+    --text: #eef1ea;
+    --text-2: #d4dbd3;
+    --muted: #a3afa7;
+    --line: #2f3a34;
+    --accent-ink: #1b120d;
+    --accent-soft: #3b2419;
+    --pine: #9cc7b2;
+    --pine-soft: #22332b;
+    --western: #2e2a1e;
+    --western-ink: #e3cd97;
+    --fresh: #7fcfa2;
+    --frozen: #8cc2e6;
+    --frozen-soft: #1d2c37;
+    --topup: #e7c072;
+    --topup-soft: #33291a;
+    --danger: #ff8a80;
+    --danger-soft: #3a1f22;
+    --shadow: 0 1px 2px rgb(0 0 0 / .3);
+    --top: #0f1714;
+    --top-2: #17221d;
+    --on-top-muted: #a9bbb0;
+    --tab-ink: #a3afa7;
+  }
+}
+
+/* Headings in the serif. */
+.page-title h1, .dialog-head h2, .mise-h { font-family: var(--font-display); letter-spacing: .01em; }
+.page-title h1 { font-weight: 600; }
+
