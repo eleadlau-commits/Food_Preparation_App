@@ -1,0 +1,6 @@
+{
+  "name": "Recipes",
+  "description": "The recipe database that comes with the app: mains, sides, soups and the ingredients they use, with shelf life and how each is bought.",
+  "version": "1.0.0",
+  "main": "Recipes.js"
+}

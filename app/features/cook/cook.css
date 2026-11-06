@@ -1,0 +1,14 @@
+.cook-view { display: grid; gap: 12px; padding-bottom: 24px; }
+.cook-night { padding: 0; overflow: hidden; }
+.cook-night summary { list-style: none; cursor: pointer; padding: 14px 16px; display: grid; gap: 2px; }
+.cook-night summary::-webkit-details-marker { display: none; }
+.cook-night.western summary { background: var(--western); }
+.cook-night.today { outline: 2px solid var(--accent); outline-offset: -2px; }
+.cook-day { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); font-weight: 700; }
+.cook-title { font-family: var(--font-display); font-size: 19px; line-height: 1.3; }
+.cook-rice { margin: 0; padding: 10px 16px; background: var(--pine-soft); color: var(--pine); font-size: 14px; }
+.cook-methods { margin: 0; padding: 6px 16px 14px; }
+.cook-methods dt { font-weight: 700; margin-top: 10px; }
+.cook-methods dd { margin: 2px 0 0; color: var(--text-2); line-height: 1.55; }
+.cook-safety p { margin: 0 0 8px; font-size: 14px; color: var(--text-2); }
+.cook-safety p:last-child { margin: 0; }

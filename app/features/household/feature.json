@@ -1,0 +1,8 @@
+{
+  "name": "Household",
+  "description": "Who's eating and how they shop: people, shop day, top-up day, diet, allergies, dislikes, cooking time.",
+  "version": "1.0.0",
+  "main": "Household.js",
+  "styles": ["household.css"],
+  "uses": ["recipes"]
+}

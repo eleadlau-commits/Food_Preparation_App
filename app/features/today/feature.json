@@ -1,0 +1,8 @@
+{
+  "name": "Today",
+  "description": "The tab the app opens on: today's reminders, tonight's dinner, today's lunch, and shopping or prep if it's today.",
+  "version": "1.0.0",
+  "main": "Today.js",
+  "styles": ["today.css"],
+  "requires": ["week"]
+}

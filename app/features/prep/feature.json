@@ -1,0 +1,8 @@
+{
+  "name": "Prep",
+  "description": "The Prep tab: the shop-day and top-up-day prep sessions, with jobs to tick off and reminders (thawing meat, soaking rice).",
+  "version": "1.0.0",
+  "main": "Prep.js",
+  "styles": ["prep.css"],
+  "requires": ["week"]
+}

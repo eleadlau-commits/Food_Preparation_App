@@ -1,0 +1,30 @@
+{
+  "id": "mise",
+  "name": "Mise",
+  "description": "A week of dinners that double as tomorrow's lunch, with the shopping list and prep plan worked out for you. Works offline.",
+  "version": "0.1.0",
+  "lang": "en-GB",
+  "theme": {
+    "accent": "#c4512a",
+    "accentDark": "#e98a5f",
+    "background": "#f4eee3",
+    "backgroundDark": "#141a17"
+  },
+  "native": {
+    "appId": "io.github.mise.app",
+    "ios": {
+      "devices": "iphone",
+      "plist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  },
+  "testViews": [
+    "today",
+    "week",
+    "shop",
+    "prep",
+    "cook"
+  ],
+  "accounts": false
+}

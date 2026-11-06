@@ -1,0 +1,7 @@
+.taste-row { display: grid; gap: 8px; padding: 12px 16px 16px; border-top: 1px solid var(--line); }
+.today-card .taste-row { padding: 8px 0 0; border: 0; }
+.taste-seg { display: flex; }
+.taste-seg button { flex: 1; }
+.taste-reasons { display: flex; flex-wrap: wrap; gap: 6px; }
+.taste-chip { padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--shape-sm); background: var(--surface); color: var(--text); font: inherit; font-size: 14px; cursor: pointer; }
+.taste-chip.on { background: var(--accent-soft); border-color: transparent; }

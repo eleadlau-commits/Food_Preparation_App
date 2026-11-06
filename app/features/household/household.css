@@ -1,0 +1,9 @@
+.hh-chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.hh-chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--shape-sm); background: var(--surface); color: var(--text); font: inherit; font-size: 14px; }
+.hh-chip.on { background: var(--accent-soft); border-color: transparent; }
+.hh-chips select { width: auto; flex: 1 1 160px; }
+.hh-lead { font-family: var(--font-display); font-size: 20px; line-height: 1.35; margin: 4px 0 8px; }
+.hh-welcome .btn.block { margin-top: 18px; }
+.hh-form .field { display: grid; grid-template-columns: 1fr; gap: 6px; align-items: start; }
+.hh-form .field select, .hh-form .field input[type=number] { width: 100%; max-width: 320px; }
+.hh-form .field input[type=number] { max-width: 120px; }

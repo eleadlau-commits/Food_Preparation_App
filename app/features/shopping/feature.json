@@ -1,0 +1,8 @@
+{
+  "name": "Shopping",
+  "description": "The Shop tab: the main shop and mid-week top-up lists, by part of the shop, with ticks.",
+  "version": "1.0.0",
+  "main": "Shopping.js",
+  "styles": ["shopping.css"],
+  "requires": ["week", "recipes"]
+}

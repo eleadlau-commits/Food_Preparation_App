@@ -1,0 +1,56 @@
+# Tests the app, then publishes the web version to GitHub Pages, every time changes reach main
+# or you press "Run workflow" on the Actions tab. If any test fails, nothing is published.
+
+name: Build app
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # Compiler tests, feature tests, the whole-app test and the delete-a-folder test, in Chrome.
+      - name: Run all tests
+        run: python build.py test --require-browser
+
+  website:
+    name: Web version (GitHub Pages)
+    needs: [test]
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    # Only works once Pages is switched on (Settings → Pages → Source: GitHub Actions).
+    continue-on-error: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile the app
+        run: python build.py --build ${{ github.run_number }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/web
+      - id: deploy
+        uses: actions/deploy-pages@v4

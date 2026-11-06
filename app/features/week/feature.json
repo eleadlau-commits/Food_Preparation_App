@@ -1,0 +1,8 @@
+{
+  "name": "Week",
+  "description": "The planning engine and this week's plan: picks dinners, schedules them for freshness, works out prep sessions, shopping sources and reminders.",
+  "version": "1.0.0",
+  "main": "Week.js",
+  "requires": ["recipes"],
+  "uses": ["household", "tastes"]
+}
