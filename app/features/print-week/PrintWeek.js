@@ -42,10 +42,14 @@ export default class PrintWeek extends Feature {
     if (!root) { root = el('div', { id: 'print-root' }); document.body.append(root); }
     root.replaceChildren(...pages);
     if (!this.window) this.window = ui.dialog({ title: 'Print the week', className: 'pr-dialog' });
+    // Inside a preview frame (such as a shared link) the browser won't print, so say so instead.
+    const framed = (() => { try { return window.self !== window.top; } catch { return true; } })();
     this.window.setContent(
       el('div', { class: 'row pr-bar' },
-        el('p', { class: 'hint' }, `${pages.length} A4 pages. Print them, or choose "Save as PDF".`),
-        el('button', { type: 'button', class: 'btn primary', onclick: () => window.print() }, 'Print')),
+        el('p', { class: 'hint' }, framed
+          ? `${pages.length} A4 pages. Printing works in the app itself (open it from its own address, not this preview).`
+          : `${pages.length} A4 pages. Print them, or choose "Save as PDF".`),
+        framed ? null : el('button', { type: 'button', class: 'btn primary', onclick: () => window.print() }, 'Print')),
       el('div', { class: 'pr-preview' }, pages.map((p) => p.cloneNode(true))));
     this.window.open();
   }
